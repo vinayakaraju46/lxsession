@@ -7,7 +7,7 @@ This tutorial will guide you on how to configure a Raspberry Pi to boot directly
 
 ## Steps
 
-1. **Create an Autostart Directory:** If it doesn't already exist, create the autostart directory:
+1. **Create an lxsession Directory:** If it doesn't already exist, create using the following command:
 
     ```bash
     mkdir -p ~/.config/lxsession/LXDE-pi
@@ -19,13 +19,13 @@ This tutorial will guide you on how to configure a Raspberry Pi to boot directly
     nano ~/.config/lxsession/LXDE-pi/autostart
     ```
 
-3. **Add Startup Programs:** Add the programs you want to start automatically to this file. For example, to start a Node.js server, you can add a line like this:
+3. **Add Startup Programs:** Add the programs you want to start automatically to this file. For example, in this case I'm opening a browser with application url, you can add a line like this:
 
     ```bash
     @/usr/bin/firefox <your-application-url>
     ```
 
-    Replace `<your-application-url>` with the URL of your web application.
+    Replace `<your-application-url>` with the URL of your web application(http://localhost:3000/test).
 
     **Save and Exit:** Save the file by pressing `Ctrl + X`, then `Y`, and finally `Enter`.
 
